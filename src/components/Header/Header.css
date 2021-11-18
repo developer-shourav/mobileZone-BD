@@ -1,0 +1,222 @@
+/* ---------------Google fonts------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =============================================
+         Site titel style
+================================================*/
+.nav-items-style{
+    font-size: 17px;
+    font-weight: bold;
+    color:#ff3783;
+    text-decoration: none;
+    margin: 0px 5px;
+    transition: all .2s ease;
+    padding: 5px;
+}
+
+.nav-items-style:hover{
+       color: white;
+       padding:5px ;
+       background-color:#ff3783 ;
+       border-radius: 3px;
+}
+
+
+.banner-container{
+    background-color:#2fd10618 ;
+}
+
+
+
+
+/* ========================================================
+                      slider style
+===============================================================*/
+
+.slider-margin{
+    margin: 160px 0px 100px;
+}
+.slider-bg{
+    background-color: #ddf8ff;
+}
+
+.slider-rounded{
+    border-radius:15px;
+}
+.slider-price-color{
+    color: #ff136f;
+}
+
+.slider-heading-color{
+    color:#3f8fff ;
+    font-weight: bold;
+    text-shadow: 1px 1px  black;
+}
+/* =============================================
+         header discription style
+================================================*/
+
+
+
+.site-discription{
+    color: #444444;
+}
+
+.primery-btn{
+    border:none;
+    color: white;
+    background-color: #001f66;
+}
+
+
+/*------------- product section style ------------- */
+
+
+/*----------------- feature section style ------------- */
+
+.mz-buying-btn{
+    border:2px solid #001f66;
+    color:#ff136f ;
+    background-color: #002b91;
+    transition: all .3s ease;
+    
+    
+}
+
+.mz-buying-btn:hover{
+    transform: scale(1.08);
+    box-shadow: 2px 2px 5px #696969e7;
+    color:#002b91;
+    background-color:  #ff136f;
+}
+
+.log-out-btn{
+    margin-left: 10px;
+    border: none ;
+    margin-top: -10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color:#FF3F61 ;
+    color: white;
+    font-weight: bold;
+}
+
+.log-out-btn:hover{
+    
+    background-color:#ff3f62de ;
+    color: #fdfdfd;
+   
+}
+
+
+/* ==============================================
+               Cards style
+=================================================*/
+.card-style{
+    box-shadow: 2px 2px  8px #9e9d9d;
+    transition: all .3s ease;
+    border-radius: 5px;
+
+}
+
+.card-style:hover{
+   transform: scale(1.05);
+    
+}
+
+
+
+
+.slidr-label{
+      color: #FF3F61;
+      font-size: 60px; 
+      text-shadow: 2px 2px black;
+      font-weight: bold;
+      font-family: 'Parisienne', cursive;
+      
+}
+
+.slidr-label-diff-color{
+    color: #001f66;
+}
+
+.line-color{
+    color: #f0ac00;
+    text-shadow: 1px 1px black;
+}
+.line-color-booking{
+    color: #FF3F61;
+    text-shadow: 1px 1px black;
+}
+
+.submit-btn{
+    color: #fff;
+    background-color: #001f66;
+    border: none;
+}
+
+.submit-btn:hover{
+   
+    background-color: #061d52;
+   
+}
+
+.order-now-btn{
+    color: #fff;
+    background-color: #FF3F61;
+    border: none;
+}
+
+.order-now-btn:hover{
+   
+    background-color: #b82943;
+    
+}
+
+
+
+
+.navbar-color{
+          background-color: #001f66;
+          
+          
+}
+
+.login-info{
+    color: rgb(68, 67, 67);
+}
+
+
+.profile-photo-style{
+    margin:-7px  5px 0px 8px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+
+.slider-height{
+    max-height: 510px;
+}
+.img{overflow: hidden;}
+
+
+/* ======================================
+              input border
+============================================*/
+.input-border{
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: 1px solid darkblue;
+}
+
+
+
+.suscribe-btn{
+    background-color: #ff385c;
+    border:none;
+}
