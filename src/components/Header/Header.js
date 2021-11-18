@@ -35,7 +35,18 @@ const Header = () => {
                                     <NavLink activeStyle={activeStyle} className=" nav-items-style" to="/allProducts"> Explore</NavLink>
                                 </li>
 
+                                {user?.email && <li className="nav-item">
+                                    <NavLink activeStyle={activeStyle} className=" nav-items-style" to="/addProduct"> Add a product</NavLink>
+                                </li>}
 
+                                {user?.email && <li className="">
+                                    <span className="fs-6 fw-bold" >  <img className='profile-photo-style' src={user.photoURL} alt="" /></span>
+                                </li>}
+
+
+                                {user?.displayName && <li className="">
+                                    <span className="fs-6 fw-bold" style={{ color: "#ff3f62de" }}> <i className="fas fa-user"></i> {user?.displayName}</span>
+                                </li>}
                                
                                 <li className="nav-item">
                                     {

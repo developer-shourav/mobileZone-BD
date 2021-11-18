@@ -8,6 +8,7 @@ import LogIn from './components/LogIn/LogIn';
 import NotFound from './components/NotFound/NotFound';
 import AuthProvider from './context/AuthProvider';
 import Register from './components/Register/Register';
+import AddProduct from './components/AddProduct/AddProduct';
 
 
 function App() {
@@ -28,14 +29,17 @@ function App() {
               <Home></Home>
             </Route>
 
-
+            {/* -----------Add a product route---------------- */}
+            <PrivetRoute exact path="/AddProduct">
+             <AddProduct></AddProduct>
+            </PrivetRoute>
 
             {/* -----------Login route---------------- */}
             <Route exact path="/login">
               <LogIn></LogIn>
             </Route>
 
-            {/* -----------Login route---------------- */}
+            {/* -----------Register route---------------- */}
             <Route exact path="/register">
              <Register> </Register>
             </Route>

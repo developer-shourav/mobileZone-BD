@@ -104,6 +104,19 @@
     font-weight: bold;
 }
 
+.buying-btn{
+    color:#fff ;
+    background-color: #f83781;
+    transition: all .3s ease;
+    border: none;
+}
+.buying-btn:hover{transform: scale(1.08);
+    box-shadow: 2px 2px 5px #696969e7;
+    background-color:  #df0257;
+}
+
+
+
 .log-out-btn:hover{
     
     background-color:#ff3f62de ;
@@ -192,7 +205,7 @@
 
 .profile-photo-style{
     margin:-7px  5px 0px 8px;
-    width: 50px;
+    width: 45px;
     border-radius: 50%;
 
 }

@@ -1,10 +1,18 @@
 
 import React, { useEffect, useState } from 'react';
+import ProductCard from '../ProductCard/ProductCard';
 import { NavLink } from 'react-router-dom';
 
 
 const Home = () => {
-   
+    const [products, setProducts] = useState([]);
+    useEffect(() => {
+        fetch('http://localhost:8000/allProducts')
+            .then(res => res.json())
+            .then(data => setProducts(data))
+
+
+    }, []);
     return (
         <div>
             <div className=''>
@@ -111,7 +119,7 @@ const Home = () => {
                         <p>✅ <span className="fw-bold"> Battery: </span>Lithium-polymer 4400 mAh (non-removable)</p>
                         <p>✅ <span className="fw-bold"> Fast Charging: </span> 25W Fast Battery Charging, Wireless Charging</p>
                         <p>✅  <span className="fw-bold"> RAM: </span>12GB</p>
-                        <p>✅ <span className="fw-bold"> ROM: </span> 256 / 512 GB (UFS 3.2)</p>
+                        <p>✅ <span className="fw-bold"> ROM: </span> 256 / 512 GB (UFS 3.1)</p>
 
 
 
@@ -170,12 +178,19 @@ const Home = () => {
             </div>
 
             {/* --------------------Our Products--------------------- */}
-
-
-
-
-            {/* khali rakhci korte hobe */}
-
+            <div className="container my-3 my-lg-5">
+                <h2 className="fw-bold my-2 my-lg-5 py-5 text-center">Our Awesome products for You</h2>
+                <div className="row row-cols-1 row-cols-md-3 g-4">
+                    {
+                        products.slice(0, 6).map(product => <ProductCard
+                            /* ------Key for error handeling------ */
+                            key={product._id}
+                            /* ------Sending Props for homeCard------ */
+                            product={product}
+                        > </ProductCard>)
+                    }
+                </div>
+            </div>
 
 
 
