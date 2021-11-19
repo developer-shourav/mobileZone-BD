@@ -159,7 +159,7 @@
 }
 
 .line-color{
-    color: #f0ac00;
+    color: #ff0783;
     text-shadow: 1px 1px black;
 }
 .line-color-booking{
@@ -276,4 +276,9 @@
 .admin-menu:hover{
     background-color: #c71435;  
     
+}
+
+.line-color-design{
+    color: #3f8fff;
+    text-shadow: 1px 1px black;
 }

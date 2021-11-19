@@ -21,7 +21,7 @@ const ProductCard = (props) => {
                         <h5 className=" fw-bold text-danger"><del>Price: {price}$</del></h5>
                         <h5 className=" fw-bold text-success">Discount price: {discountprice}$</h5>
                         <h6 > <span className="fw-bold"> Product Quality:</span> ⭐⭐⭐⭐⭐  </h6>
-                        <NavLink to={`/booking/${_id}`}> <button className=" mt-4 px-lg-5 py-lg-2 px-4 py-2 buying-btn rounded "><i className="fas fa-cart-arrow-down"></i> Buy Now</button></NavLink>
+                        <NavLink to={`/purchese/${_id}`}> <button className=" mt-4 px-lg-5 py-lg-2 px-4 py-2 buying-btn rounded "><i className="fas fa-cart-arrow-down"></i> Buy Now</button></NavLink>
                     </div>
                     
                 </div>

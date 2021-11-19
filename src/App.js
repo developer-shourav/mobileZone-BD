@@ -12,6 +12,9 @@ import AddProduct from './components/AddProduct/AddProduct';
 import AllProducts from './components/AllProducts/AllProducts';
 import Dashboard from './components/Dashboard/Dashboard';
 import Profile from './components/Profile/Profile';
+import MyOrders from './components/MyOrders/MyOrders';
+import ManageAllOrders from './components/ManageAllOrders/ManageAllOrders';
+import Purchese from './components/Purchese/Purchese';
 
 
 function App() {
@@ -32,9 +35,25 @@ function App() {
               <Home></Home>
             </Route>
 
-            {/* -----------Home route---------------- */}
+            {/* -----------Explore route---------------- */}
             <Route exact path="/allProducts">
               <AllProducts> </AllProducts>
+            </Route>
+
+            {/* -----------Parchese route---------------- */}
+            <Route exact path="/purchese/:serviceId">
+             <Purchese> </Purchese>
+            </Route>
+
+            {/* -----------My order route---------------- */}
+            <Route exact path="/myOrders">
+              <MyOrders> </MyOrders>
+            </Route>
+
+
+            {/* -----------ManageOrders route---------------- */}
+            <Route exact path="/manageOrders">
+             <ManageAllOrders> </ManageAllOrders>
             </Route>
 
             {/* -----------Dashboard route---------------- */}

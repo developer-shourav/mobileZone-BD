@@ -35,6 +35,12 @@ const Header = () => {
                                     <NavLink activeStyle={activeStyle} className=" nav-items-style" to="/allProducts"> Explore</NavLink>
                                 </li>
 
+                                <li className="nav-item">
+                                    <NavLink activeStyle={activeStyle} className=" nav-items-style" to="/myOrders"> My order</NavLink>
+                                </li>
+
+                                
+
                                 {user?.email && <li className="nav-item ">
                                     <NavLink activeStyle={activeStyle} className="admin-btn " to="/dashboard"> Admin Control</NavLink>
                                 </li>}

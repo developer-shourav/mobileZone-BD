@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import AddProduct from '../AddProduct/AddProduct';
 import useAuth from '../../hooks/useAuth';
 import Profile from '../Profile/Profile';
+import ManageAllOrders from '../ManageAllOrders/ManageAllOrders';
 const Dashboard = () => {
 
     
@@ -40,6 +41,8 @@ const Dashboard = () => {
 
                                     <li  onClick={() => setControl("AddProduct")} className="admin-menu p-2 " > Add A device</li>
 
+                                    <li onClick={() => setControl("manageOrders")} className="admin-menu p-2 " >Manage All Orders</li>
+
 
                                     
                                     
@@ -50,6 +53,7 @@ const Dashboard = () => {
                     
                      {control ==="Profile"&& <Profile> </Profile> }
                      {control ==="AddProduct" &&  <AddProduct> </AddProduct>}
+                     {control === "manageOrders" && <ManageAllOrders> </ManageAllOrders>}
                     </div>
                     </div> 
                 </div>
