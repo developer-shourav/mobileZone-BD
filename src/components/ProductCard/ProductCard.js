@@ -12,18 +12,18 @@ const ProductCard = (props) => {
                 <div className="card h-100">
                <img src={imageLink} className="card-img-top" alt="tours-img" />
                     <div className="card-body">
-                        <h5 className="card-title">{name}</h5>
-                        <h6 className=" fw-bold">RAM:{ram} GB</h6>
-                        <h6 className=" fw-bold">ROM: {rom} GB</h6>
-                        <h6 className=" fw-bold">Camera: {camera}MP</h6>
-                        <h6 className=" fw-bold">Battery: {battery}mAh</h6>
+                        <h5 className="card-title fw-bold">{name}</h5>
+                        <h6 ><span className=" fw-bold">RAM:</span>{ram} GB</h6>
+                        <h6 ><span className=" fw-bold">ROM:</span> {rom} GB</h6>
+                        <h6 ><span className=" fw-bold">Camera:</span> {camera}MP</h6>
+                        <h6 ><span className=" fw-bold">Battery:</span> {battery}mAh</h6>
                         
-                        <h6 className=" fw-bold">Price: {price}$</h6>
-                        <h6 className=" fw-bold">Discount price: {discountprice}$</h6>
-                        <h6>Product Quality:⭐⭐⭐⭐⭐  </h6>
+                        <h5 className=" fw-bold text-danger"><del>Price: {price}$</del></h5>
+                        <h5 className=" fw-bold text-success">Discount price: {discountprice}$</h5>
+                        <h6 > <span className="fw-bold"> Product Quality:</span> ⭐⭐⭐⭐⭐  </h6>
                         <NavLink to={`/booking/${_id}`}> <button className=" mt-4 px-lg-5 py-lg-2 px-4 py-2 buying-btn rounded "><i className="fas fa-cart-arrow-down"></i> Buy Now</button></NavLink>
                     </div>
-
+                    
                 </div>
 
             </div>

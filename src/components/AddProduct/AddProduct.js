@@ -24,7 +24,7 @@ const AddProduct = () => {
 
     
     return (
-        <div className="d-flex justify-content-center align-items-center ">
+        <div className="d-flex justify-content-center align-items-center  ">
             
             <div className = " card-style mt-5  px-3 py-2 py-lg-5 rounded ">
                 <h2 className = 'text-center fw-bold'>Add a new Device</h2>

@@ -11,6 +11,7 @@ import Register from './components/Register/Register';
 import AddProduct from './components/AddProduct/AddProduct';
 import AllProducts from './components/AllProducts/AllProducts';
 import Dashboard from './components/Dashboard/Dashboard';
+import Profile from './components/Profile/Profile';
 
 
 function App() {
@@ -39,6 +40,11 @@ function App() {
             {/* -----------Dashboard route---------------- */}
             <Route exact path="/dashboard">
              <Dashboard> </Dashboard>
+            </Route>
+
+            {/* -----------Dashboard route---------------- */}
+            <Route exact path="/user">
+              <Profile> </Profile>
             </Route>
 
             {/* -----------Add a product route---------------- */}

@@ -248,3 +248,32 @@
     transition: all .2s ease;
     
 }
+
+
+/* ----------------------------------------
+               Dashboard Style
+------------------------------------------------*/
+.das-bar{
+    background-color: #61dafb ;
+    color: darkblue;
+}
+
+.dash-manu-bg{
+    background-color: #001f66 ;
+    color: white;
+    list-style: none;
+    min-height: 100vh;
+    
+}
+
+.admin-menu{
+    background-color: #ff385c;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.admin-menu:hover{
+    background-color: #c71435;  
+    
+}
