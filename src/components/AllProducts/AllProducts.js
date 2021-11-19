@@ -6,7 +6,7 @@ const AllProducts = () => {
 
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:8000/allProducts')
+        fetch('https://evening-woodland-11078.herokuapp.com/allProducts')
             .then(res => res.json())
             .then(data => setProducts(data))
 
@@ -15,9 +15,9 @@ const AllProducts = () => {
     return (
         <div>
             <div className="container my-3 my-lg-5">
-                <div className="fw-bold my-2 my-lg-5 py-5 text-center"> <h1 className ="fw-bold" >Explore More...</h1 >
+                <div className="fw-bold my-2 my-lg-5 py-5 text-center"> <h1 className="fw-bold" >Explore More...</h1 >
                     <h3 className="fw-bold" > We have unlimited Devices</h3> </div>
-                
+
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                     {
                         products.map(product => <Explore
@@ -33,4 +33,4 @@ const AllProducts = () => {
     );
 };
 
-export default AllProducts; 
+export default AllProducts;

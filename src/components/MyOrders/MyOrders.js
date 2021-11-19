@@ -11,7 +11,7 @@ const MyOrders = () => {
      const [constrol, setControl] = useState(false);
 
          useEffect( () =>{
-             fetch(`http://localhost:8000/myOrders/${email}`)
+             fetch(`https://evening-woodland-11078.herokuapp.com/myOrders/${email}`)
              .then(res => res.json())
                  .then(data => setServices(data));
 
@@ -21,7 +21,7 @@ const MyOrders = () => {
          
             alert("your product will delete")
        
-            fetch(`http://localhost:8000/deleteOrder/${id}`, {
+            fetch(`https://evening-woodland-11078.herokuapp.com/deleteOrder/${id}`, {
                 method: "DELETE",
 
             })

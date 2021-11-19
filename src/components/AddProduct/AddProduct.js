@@ -1,33 +1,33 @@
- import React from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 
 const AddProduct = () => {
 
     const { register,
-          handleSubmit,
-          reset,
-          watch,
-           formState: { errors } } = useForm();
+        handleSubmit,
+        reset,
+        watch,
+        formState: { errors } } = useForm();
 
-    const onSubmit = data =>{
-        fetch("http://localhost:8000/addProducts", {
+    const onSubmit = data => {
+        fetch("https://evening-woodland-11078.herokuapp.com/addProducts", {
             method: "POST",
-            headers: {"content-type": "application/json"},
+            headers: { "content-type": "application/json" },
             body: JSON.stringify(data),
         })
-        .then(res=> res.json())
-        .then(result => console.log(result));
+            .then(res => res.json())
+            .then(result => console.log(result));
 
         reset();
         alert("Add a new success successfully")
     };
 
-    
+
     return (
         <div className="d-flex justify-content-center align-items-center  ">
-            
-            <div className = " card-style mt-5  px-3 py-2 py-lg-5 rounded ">
-                <h2 className = 'text-center fw-bold'>Add a new Device</h2>
+
+            <div className=" card-style mt-5  px-3 py-2 py-lg-5 rounded ">
+                <h2 className='text-center fw-bold'>Add a new Device</h2>
                 <img src="./addDevice.png" className='mx-auto d-block px-5' alt="" />
                 <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -47,33 +47,33 @@ const AddProduct = () => {
                         placeholder='ROM'
                         required
                         type='number'
-                       {...register("rom")} />
+                        {...register("rom")} />
                     <br />
                     <label>Camera(mp) </label>
                     <input className='ps-1 py-2 w-100  my-1'
                         placeholder='Camera'
                         required
                         type='text'
-                         {...register("camera")} />
+                        {...register("camera")} />
                     <br />
-                    <label>Battery(mAh) </label> 
+                    <label>Battery(mAh) </label>
                     <input className='ps-1 py-2 w-100  my-1'
                         placeholder='Battery'
                         required
                         type='number'
-                         {...register("battery")} />
+                        {...register("battery")} />
                     <br />
 
 
                     <textarea className='ps-1 py-2 w-100 my-1 '
                         placeholder='Description'
-                        type ='text'
+                        type='text'
                         {...register("description")} />
                     <br />
 
                     <input className='ps-1 py-2 w-100 my-1 '
                         placeholder='image url'
-                        type ='text'
+                        type='text'
                         {...register("imageLink", { required: true })} />
                     <br />
                     <label>Price($) </label>
@@ -91,7 +91,7 @@ const AddProduct = () => {
                         {...register("discountprice", { required: true })} />
                     <br />
 
-                   
+
 
 
 
@@ -101,13 +101,13 @@ const AddProduct = () => {
 
                     <button className='ps-1 py-2 rounded w-100 my-3 submit-btn' type='submit'> <i className="fas fa-mobile-alt"></i> ADD ONE </button>
 
-                    
+
                 </form>
 
 
             </div>
-             
-            
+
+
         </div>
     );
 };

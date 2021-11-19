@@ -7,7 +7,7 @@ import ProductCard from '../ProductCard/ProductCard';
 const Home = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:8000/allProducts')
+        fetch('https://evening-woodland-11078.herokuapp.com/allProducts')
             .then(res => res.json())
             .then(data => setProducts(data))
 
@@ -102,7 +102,7 @@ const Home = () => {
 
             {/* --------------Feature Product section ---------- */}
             <div className="container mt-5 pt-5">
-                      <h1 className ="text-center fw-bold">The wonder of 2021 </h1>
+                <h1 className="text-center fw-bold">The wonder of 2021 </h1>
                 <h2 className="text-center fw-bold slider-heading-color"> ----------------------</h2>
 
                 <div className="row mt-5 pt-5">
@@ -133,7 +133,7 @@ const Home = () => {
 
                 {/* ------- Second feature--------- */}
                 <div className="row mt-5 pt-5">
-                    
+
 
                     <div className="col-12 col-lg-6">
                         <h2 className="text-center fw-bold mb-5 mt-5 mt-lg-0">Samsung Galaxy Z Flip3 5G  </h2>
@@ -161,10 +161,10 @@ const Home = () => {
 
             {/*---------------- spcility section Start ----------- */}
 
-            
+
 
             {/* ------------------Special One ------------------------ */}
-             
+
             <div className="container text-center fw-bold mt-5">
                 <h1 className="fw-bold text-dark my-lg-5 my-3 pt-lg-5 pb-lg-0 py-3"> Lstest of this week </h1>
 
@@ -207,10 +207,10 @@ const Home = () => {
                         <h1 className="text-center fw-bold mb-4 mt-5 mt-lg-0">WHY CHOOSE US</h1>
                         <p className="fw-bold login-info   ">
                             Whether you know exactly what kinds of phone you want to buy, or you are looking for some ideas, <span className="fs-5 text-dark">MobileZone BD</span> has over 1632 smart phones and  55 brands. <br /><br />
-                           We provides to pay all kinds of payment mathod.Only we can provide 100% customer satisfied after sell service. We provide ocasionally discounts, Real product and so on.  Thank you!
+                            We provides to pay all kinds of payment mathod.Only we can provide 100% customer satisfied after sell service. We provide ocasionally discounts, Real product and so on.  Thank you!
                         </p>
 
-                        
+
                     </div>
 
                 </div>

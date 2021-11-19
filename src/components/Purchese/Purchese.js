@@ -12,11 +12,11 @@ const Purchese = () => {
     const [product, setProduct] = useState({});
 
     const email = sessionStorage.getItem("email");
-   
+
     console.log(email);
 
     useEffect(() => {
-        fetch(`http://localhost:8000/singleProduct/${serviceId}`)
+        fetch(`https://evening-woodland-11078.herokuapp.com/singleProduct/${serviceId}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])
@@ -33,7 +33,7 @@ const Purchese = () => {
         data.packageName = product.name;
 
 
-        fetch("http://localhost:8000/confirmPurchese", {
+        fetch("https://evening-woodland-11078.herokuapp.com/confirmPurchese", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),
@@ -60,7 +60,7 @@ const Purchese = () => {
 
             <div className='col-lg-8 mx-auto col-12   px-3 py-2 py-lg-4 rounded'>
                 <h1 className='ps-2 mb-3 fw-bold uppercase'>Device : {product?.name}</h1>
-                <img src={product?.imageLink} className='w-50 p-4  d-block  shadow-lg rounded' alt=""  />
+                <img src={product?.imageLink} className='w-50 p-4  d-block  shadow-lg rounded' alt="" />
                 <br /><br />
                 <h2>{product?.name}</h2>
                 <h3 className='text-start line-color-design'><i className="fas fa-angle-double-right" /><i className="fas fa-angle-double-right" /><i className="fas fa-angle-double-right" /><i className="fas fa-angle-double-right" /><i className="fas fa-angle-double-right" /><i className="fas fa-angle-double-right" /><i className="fas fa-angle-double-right" /><i className="fas fa-angle-double-right" /><i className="fas fa-angle-double-right" /><i className="fas fa-angle-double-right" /></h3>
@@ -83,8 +83,8 @@ const Purchese = () => {
                         required
                         placeholder="Enter Your Name"
                         {...register("name")} />
-                        <br />
-                    
+                    <br />
+
                     <label>Email </label>
                     <input className='ps-1 py-2 w-100  my-1'
 
@@ -94,7 +94,7 @@ const Purchese = () => {
                     <label>Address: </label>
                     <input className='ps-1 py-2 w-100  my-1'
 
-                        
+
                         placeholder="You address"
                         {...register("Address")} />
                     <br />
@@ -105,7 +105,7 @@ const Purchese = () => {
                         required
                         defaultValue={product?.name}
                     />
-                    
+
                     <label>Price of Device($):After discount </label>
                     <input className='ps-1 py-2 w-100 my-1 '
                         placeholder='Price'
@@ -113,7 +113,7 @@ const Purchese = () => {
                         defaultValue={product?.discountprice}
                         type='number'
                     />
-                   
+
 
                     {errors.exampleRequired && <span>This field is required</span>}
                     <button className=' py-2 rounded w-100 my-3 order-now-btn ' type='submit'> <i className="fas fa-cart-plus"></i> Order Now </button>
