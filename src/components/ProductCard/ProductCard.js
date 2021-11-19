@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -8,7 +7,7 @@ const ProductCard = (props) => {
     const { name, price, discountprice, imageLink, _id, battery, camera, rom, ram} = props.product;
     return (
         <div className="">
-            {/* -----------Home page tours section------------ */}
+            {/* -----------Home page product section------------ */}
             <div className="col h-100 card-style">
                 <div className="card h-100">
                <img src={imageLink} className="card-img-top" alt="tours-img" />

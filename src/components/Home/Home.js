@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import ProductCard from '../ProductCard/ProductCard';
-import { NavLink } from 'react-router-dom';
+
 
 
 const Home = () => {
@@ -185,7 +185,7 @@ const Home = () => {
                         products.slice(0, 6).map(product => <ProductCard
                             /* ------Key for error handeling------ */
                             key={product._id}
-                            /* ------Sending Props for homeCard------ */
+                            /* ------Sending Props for ProductCard------ */
                             product={product}
                         > </ProductCard>)
                     }
@@ -206,7 +206,7 @@ const Home = () => {
                     <div className="col-12 col-lg-6">
                         <h1 className="text-center fw-bold mb-4 mt-5 mt-lg-0">WHY CHOOSE US</h1>
                         <p className="fw-bold login-info   ">
-                            Whether you know exactly what kinds of phone you want to buy, or you are looking for some ideas, <span className="fs-4 text-dark">MobileZone BD</span> has over 1632 smart phones and  55 brands. <br /><br />
+                            Whether you know exactly what kinds of phone you want to buy, or you are looking for some ideas, <span className="fs-5 text-dark">MobileZone BD</span> has over 1632 smart phones and  55 brands. <br /><br />
                            We provides to pay all kinds of payment mathod.Only we can provide 100% customer satisfied after sell service. We provide ocasionally discounts, Real product and so on.  Thank you!
                         </p>
 

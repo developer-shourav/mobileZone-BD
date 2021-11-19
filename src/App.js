@@ -9,6 +9,8 @@ import NotFound from './components/NotFound/NotFound';
 import AuthProvider from './context/AuthProvider';
 import Register from './components/Register/Register';
 import AddProduct from './components/AddProduct/AddProduct';
+import AllProducts from './components/AllProducts/AllProducts';
+import Dashboard from './components/Dashboard/Dashboard';
 
 
 function App() {
@@ -27,6 +29,16 @@ function App() {
             {/* -----------Home route---------------- */}
             <Route exact path="/home">
               <Home></Home>
+            </Route>
+
+            {/* -----------Home route---------------- */}
+            <Route exact path="/allProducts">
+              <AllProducts> </AllProducts>
+            </Route>
+
+            {/* -----------Dashboard route---------------- */}
+            <Route exact path="/dashboard">
+             <Dashboard> </Dashboard>
             </Route>
 
             {/* -----------Add a product route---------------- */}
