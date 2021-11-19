@@ -54,7 +54,7 @@ const MyOrders = () => {
                                           
                                           <p >Order status:   <span className="text-primary">{service?.status}</span></p>
                                           <h4 className="line-color fw-bold mb-3">Cost: {service?.price}$ </h4>
-                                          <button onClick={() => handleDelete(service?._id)} className="buying-btn px-5 py-2 text-white border rounded py-1 "><i className="far fa-window-close"></i> Cancel</button>
+                                          <button onClick={() => handleDelete(service?._id)} className="buying-btn w-100 py-2 text-white border rounded py-1 "><i className="far fa-window-close"></i> Cancel</button>
 
                                       </div>
                                   </div>

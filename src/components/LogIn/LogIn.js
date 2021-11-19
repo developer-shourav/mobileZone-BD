@@ -46,7 +46,7 @@ const LogIn = () => {
                         <span> New at MobileZone?  <NavLink to="/register">   go to register  </NavLink> </span>
                     </form>
                      
-                    <div className="">----------------Or----------------</div>
+                    <div className="">------------------Or------------------</div>
                     <button
                         className="primery-btn rounded text-center w-100 px-4 py-2"
                         onClick={signInUsingGoogle}
@@ -54,7 +54,7 @@ const LogIn = () => {
                     > <i className="fab fa-google"></i> Log In With google</button>
                 </div>
             </div>
-            
+            <div className="text-center mt-4"><p>[Note:Manual login is not available at this moment .Please log in with google.Thankes]</p> </div>
         </div>
     );
 };

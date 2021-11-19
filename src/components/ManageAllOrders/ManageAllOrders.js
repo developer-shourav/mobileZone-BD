@@ -26,7 +26,7 @@ const ManageAllOrders = () => {
 
        
 
-        
+           alert("You product will delete")
             fetch(`http://localhost:8000/deleteOrder/${id}`, {
                 method: "DELETE",
 
@@ -104,7 +104,7 @@ const ManageAllOrders = () => {
                                                     <div className="ms-5 mt-4 mt-lg-0">
                                                         <button onClick={() => handleUpdate(order?._id)}className="btn btn-primary ms-4" >Approve Order</button>
                                                         
-                                                        <button onClick={() => handleDelete(order?._id)}  className="btn btn-warning ms-4 mt-3"><i className="fas fa-trash" aria-hidden="true"></i> Delete Order</button>
+                                                        <button onClick={() => handleDelete(order?._id)}  className="btn btn-warning ms-4 mt-3 "><i className="fas fa-trash" aria-hidden="true"></i> Delete Order</button>
                                                     </div>
                                                 </div>
 

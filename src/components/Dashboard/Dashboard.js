@@ -11,7 +11,7 @@ const Dashboard = () => {
 
     const [control, setControl] =useState("Profile");
     const { user, logOut } = useAuth();
-    console.log(user);
+
     return (
         <div className = ''>
             <div className="">
@@ -43,6 +43,8 @@ const Dashboard = () => {
 
                                     <li onClick={() => setControl("manageOrders")} className="admin-menu p-2 " >Manage All Orders</li>
 
+
+                                    <li onClick={logOut} className="admin-menu p-2 " > <i className="fas fa-sign-out-alt"></i>Log out</li>
 
                                     
                                     

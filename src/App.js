@@ -15,6 +15,8 @@ import Profile from './components/Profile/Profile';
 import MyOrders from './components/MyOrders/MyOrders';
 import ManageAllOrders from './components/ManageAllOrders/ManageAllOrders';
 import Purchese from './components/Purchese/Purchese';
+import UserDashboard from './components/UserDashboard/UserDashboard';
+import ProfileUser from './components/ProfileUser/ProfileUser';
 
 
 function App() {
@@ -41,31 +43,38 @@ function App() {
             </Route>
 
             {/* -----------Parchese route---------------- */}
-            <Route exact path="/purchese/:serviceId">
+            <PrivetRoute exact path="/purchese/:serviceId">
              <Purchese> </Purchese>
-            </Route>
+            </PrivetRoute>
 
             {/* -----------My order route---------------- */}
-            <Route exact path="/myOrders">
+            <PrivetRoute exact path="/myOrders">
               <MyOrders> </MyOrders>
-            </Route>
+            </PrivetRoute>
 
 
             {/* -----------ManageOrders route---------------- */}
-            <Route exact path="/manageOrders">
+            <PrivetRoute exact path="/manageOrders">
              <ManageAllOrders> </ManageAllOrders>
-            </Route>
+            </PrivetRoute>
 
-            {/* -----------Dashboard route---------------- */}
-            <Route exact path="/dashboard">
+            {/* -----------Admin Dashboard route---------------- */}
+            <PrivetRoute exact path="/dashboard">
              <Dashboard> </Dashboard>
-            </Route>
+            </PrivetRoute>
 
+            {/* -----------User Dashboard route---------------- */}
+            <PrivetRoute exact path="/userdashboard">
+              <UserDashboard></UserDashboard>
+            </PrivetRoute>
             {/* -----------Dashboard route---------------- */}
-            <Route exact path="/user">
+            <PrivetRoute exact path="/adminProfile">
               <Profile> </Profile>
-            </Route>
-
+            </PrivetRoute>
+            {/* -----------Dashboard route---------------- */}
+            <PrivetRoute exact path="/userProfile">
+             <ProfileUser></ProfileUser>
+            </PrivetRoute>
             {/* -----------Add a product route---------------- */}
             <PrivetRoute exact path="/AddProduct">
              <AddProduct></AddProduct>

@@ -35,15 +35,18 @@ const Header = () => {
                                     <NavLink activeStyle={activeStyle} className=" nav-items-style" to="/allProducts"> Explore</NavLink>
                                 </li>
 
-                                <li className="nav-item">
-                                    <NavLink activeStyle={activeStyle} className=" nav-items-style" to="/myOrders"> My order</NavLink>
-                                </li>
-
+                                
                                 
 
                                 {user?.email && <li className="nav-item ">
                                     <NavLink activeStyle={activeStyle} className="admin-btn " to="/dashboard"> Admin Control</NavLink>
                                 </li>}
+
+                                {user?.email && <li className="nav-item ">
+                                    <NavLink activeStyle={activeStyle} className="admin-btn " to="/userdashboard"> User Dashboard</NavLink>
+                                </li>}
+
+
 
                                 {user?.email && <li className="">
                                     <span className="fs-6 fw-bold" >  <img className='profile-photo-style' src={user.photoURL} alt="" /></span>
