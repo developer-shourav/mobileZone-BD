@@ -6,7 +6,7 @@ const AllProducts = () => {
 
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('https://evening-woodland-11078.herokuapp.com/allProducts')
+        fetch('https://modile-zone-bd-server.vercel.app/allProducts')
             .then(res => res.json())
             .then(data => setProducts(data))
 

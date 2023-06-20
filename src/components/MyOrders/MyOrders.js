@@ -11,7 +11,7 @@ const MyOrders = () => {
      const [constrol, setControl] = useState(false);
 
          useEffect( () =>{
-             fetch(`https://evening-woodland-11078.herokuapp.com/myOrders/${email}`)
+             fetch(`https://modile-zone-bd-server.vercel.app/myOrders/${email}`)
              .then(res => res.json())
                  .then(data => setServices(data));
 
@@ -21,7 +21,7 @@ const MyOrders = () => {
          
             alert("your product will delete")
        
-            fetch(`https://evening-woodland-11078.herokuapp.com/deleteOrder/${id}`, {
+            fetch(`https://modile-zone-bd-server.vercel.app/deleteOrder/${id}`, {
                 method: "DELETE",
 
             })

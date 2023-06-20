@@ -16,7 +16,7 @@ const ManageAllOrders = () => {
     }
 
     useEffect(() => {
-        fetch(`https://evening-woodland-11078.herokuapp.com/myOrders/${email}`)
+        fetch(`https://modile-zone-bd-server.vercel.app/myOrders/${email}`)
             .then(res => res.json())
             .then(data => setOrders(data));
 
@@ -27,7 +27,7 @@ const ManageAllOrders = () => {
 
 
         alert("You product will delete")
-        fetch(`https://evening-woodland-11078.herokuapp.com/deleteOrder/${id}`, {
+        fetch(`https://modile-zone-bd-server.vercel.app/deleteOrder/${id}`, {
             method: "DELETE",
 
         })
@@ -42,7 +42,7 @@ const ManageAllOrders = () => {
     };
 
     const handleUpdate = id => {
-        fetch(`https://evening-woodland-11078.herokuapp.com/updateStatus/${id}`, {
+        fetch(`https://modile-zone-bd-server.vercel.app/updateStatus/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ status }),

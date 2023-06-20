@@ -16,7 +16,7 @@ const Purchese = () => {
     console.log(email);
 
     useEffect(() => {
-        fetch(`https://evening-woodland-11078.herokuapp.com/singleProduct/${serviceId}`)
+        fetch(`https://modile-zone-bd-server.vercel.app/singleProduct/${serviceId}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])
@@ -33,7 +33,7 @@ const Purchese = () => {
         data.packageName = product.name;
 
 
-        fetch("https://evening-woodland-11078.herokuapp.com/confirmPurchese", {
+        fetch("https://modile-zone-bd-server.vercel.app/confirmPurchese", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

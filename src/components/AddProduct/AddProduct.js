@@ -10,7 +10,7 @@ const AddProduct = () => {
         formState: { errors } } = useForm();
 
     const onSubmit = data => {
-        fetch("https://evening-woodland-11078.herokuapp.com/addProducts", {
+        fetch("https://modile-zone-bd-server.vercel.app/addProducts", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

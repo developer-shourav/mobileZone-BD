@@ -3,7 +3,7 @@
 
 Visite our websit to get an Awesome device and after sell service  [MobileZone BD](https://mobilezone-bd.web.app/) .
 
-Our backend live server [MobileZone BD server](https://evening-woodland-11078.herokuapp.com/) .
+
 
 
 
